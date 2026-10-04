@@ -70,7 +70,11 @@
     <style>
         body {
             font-family: 'Pretendard', sans-serif;
-            background-color: #070510;
+            /* 배경 사진(bg.jpg)을 넣고 어둡게 오버레이 처리를 하는 코드입니다 */
+            background: linear-gradient(rgba(7, 5, 16, 0.75), rgba(7, 5, 16, 0.85)), url('2.png');
+            background-size: cover;          /* 화면에 꽉 차게 조절 */
+            background-position: center;     /* 👈 이 부분이 바로 백그라운드 사진의 위치입니다! */
+            background-attachment: fixed;    /* 스크롤해도 배경 고정 */
             color: #f3f4f6;
             overflow-x: hidden;
         }
@@ -131,7 +135,7 @@
             <!-- 레이나(보라)와 네온(시안)이 섞인 아바타 외곽 그라데이션 라인 -->
             <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 via-fuchsia-500 to-cyan-400 rounded-full blur opacity-80"></div>
             <div class="relative w-28 h-28 rounded-full overflow-hidden border-2 border-purple-900/50 bg-gray-900 shadow-2xl">
-                <img src="d.jpg" alt="프로필 아바타" class="w-full h-full object-cover">
+                <img src="1.png" alt="프로필 아바타" class="w-full h-full object-cover">
             </div>
             <div class="absolute bottom-0 right-0 bg-gradient-to-r from-purple-600 to-cyan-500 text-white p-1.5 rounded-full shadow-lg border border-gray-900 text-xs flex items-center justify-center w-7 h-7" title="VALORANT Streamer">
                 <i class="fa-solid fa-bolt text-[10px]"></i>
